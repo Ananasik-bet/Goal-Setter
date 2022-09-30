@@ -17,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/goals', routes.goalRoutes.router);
+app.use('/api/users', routes.userRoutes.router);
 
 app.use(errorMiddleware.errorHandler);
 
